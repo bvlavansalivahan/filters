@@ -4,7 +4,7 @@ import Table from './Table';
 import { Users }  from './Data';
 
 function App() {
-  const [query,setquery]=useState("");
+ 
   
   return (
     <div className="App">
