@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 
 
 const Table=({data})=> {
-    let [query,setquery]=useState("");
+    const [query,setquery]=useState("");
     query=query.toLowerCase();        
-    let filtered= data.filter((user)=>user.email.toLowerCase().includes(query)||
+    const filtered= data.filter((user)=>user.email.toLowerCase().includes(query)||
     user.first_name.toLowerCase().includes(query)||
     user.last_name.toLowerCase().includes(query)||
     user.gender.toLowerCase().includes(query)||
